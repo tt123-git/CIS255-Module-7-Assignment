@@ -38,18 +38,18 @@
  </div>
  <script>
   $(document).ready(function(){
-    $('.sub-btn').click(function(){
-      $(this).next('.sub-menu').slideToggle();
-      $(this).find('.dropdown').toggleClass('rotate');
+    $('.sub-btn').click(function(){ // when click sub-btn
+      $(this).next('.sub-menu').slideToggle(); //makes slide toggle of sub-menu
+      $(this).find('.dropdown').toggleClass('rotate');//makes toggle rotate 
     });
 
-    $('.menu-btn').click(function(){
-      $('.side-bar').addClass('active');
-      $('.menu-btn').css("visibility", "hidden");
+    $('.menu-btn').click(function(){ //when click menu-btn
+      $('.side-bar').addClass('active');//makes activate side-bar
+      $('.menu-btn').css("visibility", "hidden");// makes hidden menu-btn
     });
-    $('.close-btn').click(function(){
-      $('.side-bar').removeClass('active');
-      $('.menu-btn').css("visibility", "visible");
+    $('.close-btn').click(function(){// when click close-btn
+      $('.side-bar').removeClass('active'); // remove side-bar
+      $('.menu-btn').css("visibility", "visible"); //makes visible menu-btn
     });
   });
  </script>
